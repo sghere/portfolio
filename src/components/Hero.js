@@ -8,6 +8,13 @@ import btn4 from '../Images/database.svg';
 
 import resume from '../Images/ShubhamGaikwad.pdf';
 
+import {
+  FaFacebookF,
+  FaLinkedinIn,
+  FaWhatsapp,
+  FaInstagram,
+} from 'react-icons/fa';
+
 const Section = styled.section`
   height: 100vh;
   display: flex;
@@ -36,7 +43,7 @@ const Button = styled(motion.button)`
   border: 2px solid white;
   border-radius: 4px;
   color: white;
-  box-shadow: 20px 0px 30px black;
+  /* box-shadow: 20px 0px 30px black; */
 `;
 
 const ColumnLeft = styled.div`
@@ -56,7 +63,7 @@ const Image = styled(motion.img)`
   max-width: 150px;
   max-height: 150px;
 
-  box-shadow: 20px 0px 30px black;
+  box-shadow: 5px 5px 20px black;
   padding: 10px;
 
   @media screen and (max-width: 768px) {
@@ -77,8 +84,8 @@ const ColumnRight = styled.div`
     left: -50px;
   }
   ${Image}:nth-child(2) {
-    top: 155px;
-    right: 160px;
+    top: 50px;
+    right: 190px;
   }
   ${Image}:nth-child(3) {
     top: 350px;
@@ -126,19 +133,32 @@ const Hero = () => {
             </motion.p>
             <a href={resume} download>
               <Button
-                whileHover={{ scale: 1.1 }}
+                whileHover={{ scale: 1.005 }}
                 whileTap={{
                   scale: 0.95,
                   backgroundColor: '#3498db',
-                  border: 'none',
                   color: '#000',
                 }}
                 initial={{ opacity: 0 }}
-                animate={{ opacity: 1, transition: { duration: 1.5 } }}
+                animate={{ opacity: 1, transition: { duration: 0.5 } }}
               >
                 Resume
               </Button>
             </a>
+            <div className="iconclasscontainer">
+              <a href="https://www.linkedin.com/in/sghere/">
+                <FaLinkedinIn className="iconclass" />
+              </a>
+              <a href="https://www.facebook.com/itssg4u/">
+                <FaFacebookF className="iconclass" />
+              </a>
+              <a href="https://api.whatsapp.com/send/?phone=918655301910&text=Hey+I+checked+your+Portfolio&type=phone_number&app_absent=0">
+                <FaWhatsapp className="iconclass" />
+              </a>
+              <a href="https://www.instagram.com/mr_sg__/">
+                <FaInstagram className="iconclass" />
+              </a>
+            </div>
           </ColumnLeft>
           <ColumnRight>
             <Image

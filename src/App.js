@@ -3,7 +3,7 @@ import Hero from './components/Hero.js';
 import About from './components/About.js';
 import P from './components/projectTemplate.js';
 import { Parallax } from 'react-parallax';
-import bgimg1 from './Images/bgimg1.jpg';
+import bgimg1 from './Images/bgimg2.jpg';
 import AOS from 'aos';
 
 function App() {

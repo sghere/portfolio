@@ -66,3 +66,46 @@
 .shadow {
   box-shadow: 10px 10px 20px black;
 }
+
+.iconclasscontainer {
+  padding: 20px 0px;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  gap: 15px;
+}
+
+.iconclass {
+  font-size: 25px;
+  transition: 0.3s;
+}
+
+.iconclass:hover {
+  scale: 1.1;
+  color: aqua;
+  cursor: pointer;
+}
+
+code {
+  color: #2d3436;
+}
+
+.jumbotron {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-track {
+  background: linear-gradient(0deg, green 0%, red 100%);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: transparent; /* opacity: 0; should do the thing either */
+  box-shadow: 0px 0px 0px 100000vh black;
+}
+
+.iconclasscontainer a {
+  color: white;
+}
