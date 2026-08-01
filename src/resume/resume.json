@@ -1,0 +1,267 @@
+{
+  "personal": {
+    "fullName": "Shubham Mahesh Gaikwad",
+    "title": "Senior Software Engineer",
+    "headline": "Immediate Joiner",
+    "location": {
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "country": "India"
+    },
+    "contact": {
+      "phone": "+91 8655301910",
+      "email": "gaikwadshubham.work@gmail.com",
+      "linkedin": "https://linkedin.com/in/sghere/",
+      "github": "https://github.com/sghere"
+    }
+  },
+  "summary": "Frontend Engineer with nearly 4 years of experience designing, developing, and scaling enterprise web applications using React.js, Next.js, TypeScript, and JavaScript (ES6+). Specialized in frontend architecture, reusable component libraries, React Hooks, state management (Redux Toolkit, Zustand, React Query), REST API integration, and performance optimization. Proven track record of improving application performance (1.5× faster load times), building scalable and maintainable solutions, and delivering production-grade applications through responsive design, API caching, code splitting, lazy loading, memoization, and CI/CD in Agile environments.",
+  "skills": {
+    "frontend": [
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "JavaScript (ES6+)",
+      "React Hooks",
+      "Custom Hooks",
+      "React Router",
+      "Redux Toolkit",
+      "RTK Query",
+      "Context API",
+      "Zustand",
+      "React Query",
+      "React Hook Form",
+      "HTML5",
+      "CSS3",
+      "SASS/SCSS",
+      "Tailwind CSS",
+      "Material UI (MUI)",
+      "shadcn/ui",
+      "Framer Motion",
+      "D3.js",
+      "Recharts",
+      "Chart.js",
+      "WebSocket"
+    ],
+    "architecture": [
+      "Design Systems",
+      "Reusable Component Libraries",
+      "Performance Optimization",
+      "Core Web Vitals",
+      "Memoization",
+      "Code Splitting",
+      "Lazy Loading",
+      "Accessibility (WCAG)",
+      "Microfrontends",
+      "Module Federation"
+    ],
+    "backend": [
+      "Node.js",
+      "Express.js",
+      "REST APIs",
+      "GraphQL",
+      "API Integration",
+      "Data Fetching",
+      "API Caching",
+      "Authentication"
+    ],
+    "testing": [
+      "Jest",
+      "React Testing Library",
+      "Cypress",
+      "Storybook"
+    ],
+    "tools": [
+      "Git",
+      "GitHub",
+      "Vite",
+      "Webpack",
+      "Babel",
+      "Docker",
+      "AWS",
+      "CI/CD",
+      "Vercel",
+      "Netlify",
+      "Postman",
+      "Figma",
+      "Linux",
+      "Kubernetes (Basic)"
+    ],
+    "core": [
+      "Data Structures & Algorithms",
+      "Design Patterns",
+      "SQL",
+      "Agile",
+      "HTTP/HTTPS"
+    ]
+  },
+  "experience": [
+    {
+      "company": "Tata Consultancy Services (TCS)",
+      "location": "Thane, Maharashtra",
+      "designation": "Systems Engineer",
+      "startDate": "2025-11",
+      "endDate": "2026-07",
+      "employmentType": "Full-time",
+      "responsibilities": [
+        "Designed and owned scalable UI architecture for an enterprise banking application using React.js, Next.js, and TypeScript.",
+        "Developed reusable component libraries and implemented Redux Toolkit Query for efficient data fetching, caching, and state management.",
+        "Integrated secure REST APIs with robust error handling to improve application performance and reliability.",
+        "Architected end-to-end frontend for Hassalah (Savings) and Murabaha (Deposits) modules for Gulf International Bank, leading a team of 4 engineers.",
+        "Built and maintained CI/CD pipelines, standardizing deployment workflows across development, staging, and production.",
+        "Delivered multilingual Arabic localization using react-i18next.",
+        "Optimized Core Web Vitals to improve page speed by 40%.",
+        "Reduced JavaScript payload from 3.2 MB to 290 KB using route-based code splitting and lazy loading.",
+        "Improved Largest Contentful Paint (LCP) from 5.4 seconds to 1.2 seconds."
+      ],
+      "technologies": [
+        "React.js",
+        "Next.js",
+        "TypeScript",
+        "Redux Toolkit",
+        "RTK Query",
+        "REST APIs",
+        "CI/CD",
+        "react-i18next"
+      ]
+    },
+    {
+      "company": "SMARTe",
+      "location": "Navi Mumbai, Maharashtra",
+      "designation": "Senior Software Engineer",
+      "startDate": "2022-08",
+      "endDate": "2025-11",
+      "employmentType": "Full-time",
+      "responsibilities": [
+        "Designed scalable React.js architecture, improving page load performance by 150% and reducing unnecessary re-renders by 60%.",
+        "Built reusable component libraries and custom React Hooks, reducing code duplication and accelerating feature development by 80%.",
+        "Engineered high-performance filtering and search, improving large dataset query performance by 75%.",
+        "Implemented React Virtualization for 1M+ record datasets, reducing render time from 4.2s to 350ms.",
+        "Modernized legacy React architecture, reducing technical debt by 80%.",
+        "Developed a production Chrome Extension adopted by 1,000+ enterprise sales representatives.",
+        "Collaborated through Git, pull requests, code reviews, and Agile methodologies.",
+        "Optimized performance using memoization, lazy loading, code splitting, and React performance best practices.",
+        "Enforced TypeScript and ESLint standards across a team of 8 engineers.",
+        "Integrated REST APIs and managed server state using React Query.",
+        "Built scroll-based animations using Motion (Framer Motion).",
+        "Diagnosed and resolved production issues through debugging and root cause analysis.",
+        "Troubleshot complex frontend issues involving state management, rendering, and API integration.",
+        "Built responsive cross-browser user interfaces using Tailwind CSS and Material UI."
+      ],
+      "technologies": [
+        "React.js",
+        "TypeScript",
+        "React Query",
+        "Tailwind CSS",
+        "Material UI",
+        "Chrome Extension APIs",
+        "REST APIs",
+        "Git",
+        "ESLint"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Unified App (Microfrontend Architecture)",
+      "type": "Enterprise Application",
+      "description": "Designed a microfrontend platform using Webpack Module Federation for independent deployments.",
+      "highlights": [
+        "Built reusable UI modules enabling parallel development.",
+        "Migrated to React 18 with Concurrent Rendering.",
+        "Improved page load performance by 150%.",
+        "Increased developer productivity by 80%.",
+        "Implemented high-performance filtering for large datasets.",
+        "Performed performance audits using Chrome DevTools and Lighthouse."
+      ],
+      "technologies": [
+        "React 18",
+        "Webpack",
+        "Module Federation",
+        "Chrome DevTools",
+        "Lighthouse"
+      ]
+    },
+    {
+      "name": "SMARTe Chrome Extension",
+      "type": "Browser Extension",
+      "description": "Production Chrome Extension used by over 1,000 users.",
+      "highlights": [
+        "Reduced lead retrieval time by 40%.",
+        "Built using React.js and Chrome Extension APIs.",
+        "Implemented Tabs, Windows, and Runtime messaging APIs.",
+        "Fetched contextual data based on active webpages."
+      ],
+      "technologies": [
+        "React.js",
+        "Chrome Extension APIs",
+        "REST APIs",
+        "TypeScript"
+      ]
+    },
+    {
+      "name": "@sghere/is-active",
+      "type": "Open Source",
+      "description": "Published an open-source React component on npm for active state detection.",
+      "highlights": [
+        "Built with TypeScript.",
+        "Published on npm."
+      ],
+      "technologies": [
+        "React",
+        "TypeScript",
+        "npm"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Computer Applications (MCA)",
+      "institution": "Veermata Jijabai Technological Institute (VJTI)",
+      "location": "Mumbai",
+      "startDate": "2020-10",
+      "endDate": "2022-07"
+    },
+    {
+      "degree": "Bachelor of Science in Information Technology",
+      "institution": "D.G. Ruparel College",
+      "location": "Mumbai",
+      "startDate": "2017-06",
+      "endDate": "2020-10"
+    }
+  ],
+  "publications": [
+    {
+      "title": "Data Collection System based on Progressive Web Applications (PWA) as a SaaS Platform",
+      "publisher": "IEEE Xplore",
+      "publishedDate": "2022-06",
+      "url": "https://ieeexplore.ieee.org/document/10039543/"
+    }
+  ],
+  "achievements": [
+    {
+      "metric": "JavaScript Bundle",
+      "value": "Reduced from 3.2 MB to 290 KB (91%)"
+    },
+    {
+      "metric": "Largest Contentful Paint",
+      "value": "Improved from 5.4s to 1.2s"
+    },
+    {
+      "metric": "Page Load Performance",
+      "value": "Improved by 150%"
+    },
+    {
+      "metric": "React Virtualization",
+      "value": "4.2s to 350ms for 1M+ records"
+    },
+    {
+      "metric": "Lead Retrieval",
+      "value": "Reduced from 5-10 minutes to 45 seconds"
+    },
+    {
+      "metric": "Chrome Extension Users",
+      "value": "1000+ enterprise users"
+    }
+  ]
+}
