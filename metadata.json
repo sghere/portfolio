@@ -1,6 +1,6 @@
 {
   "name": "Shubham Gaikwad — Senior Frontend Engineer Portfolio",
-  "description": "Interactive, high-performance portfolio for Shubham Mahesh Gaikwad featuring D3 visualizations, smooth physics, motion-driven experience timeline, and resume integrations.",
+  "description": "Portfolio website with animations",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
