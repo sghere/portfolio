@@ -45,6 +45,7 @@ export interface ProjectItem {
   description: string;
   highlights: string[];
   technologies: string[];
+  link?: string;
 }
 
 export interface EducationItem {

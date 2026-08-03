@@ -1,12 +1,20 @@
-import { motion } from 'motion/react';
-import { SectionHeading } from '../components/SectionHeading';
-import { resumeData } from '../utils/resumeData';
-import { Layers, Chrome, PackageCheck, Check, ArrowUpRight, Sparkles } from 'lucide-react';
+import { motion } from "motion/react";
+import { SectionHeading } from "../components/SectionHeading";
+import { resumeData } from "../utils/resumeData";
+import {
+  Layers,
+  Chrome,
+  PackageCheck,
+  Check,
+  ArrowUpRight,
+  Sparkles,
+} from "lucide-react";
 
 export function Projects() {
   const getProjectIcon = (type: string) => {
-    if (type.includes('Microfrontend') || type.includes('Enterprise')) return Layers;
-    if (type.includes('Browser') || type.includes('Chrome')) return Chrome;
+    if (type.includes("Microfrontend") || type.includes("Enterprise"))
+      return Layers;
+    if (type.includes("Browser") || type.includes("Chrome")) return Chrome;
     return PackageCheck;
   };
 
@@ -43,9 +51,17 @@ export function Projects() {
                 </div>
 
                 {/* Project Title */}
-                <h3 className="text-xl font-bold uppercase tracking-tight text-slate-900 dark:text-white transition-colors">
-                  {proj.name}
-                </h3>
+                {proj.link ? (
+                  <a href={proj.link || "#"} target={"_blank"}>
+                    <h3 className="text-xl hover:underline font-bold uppercase tracking-tight text-slate-900 dark:text-white transition-colors">
+                      {proj.name}
+                    </h3>
+                  </a>
+                ) : (
+                  <h3 className="text-xl font-bold uppercase tracking-tight text-slate-900 dark:text-white transition-colors">
+                    {proj.name}
+                  </h3>
+                )}
 
                 <p className="mt-3 text-xs md:text-sm text-slate-600 dark:text-white/70 leading-relaxed font-light">
                   {proj.description}
@@ -54,7 +70,10 @@ export function Projects() {
                 {/* Highlights List */}
                 <div className="mt-6 space-y-2 pt-4 border-t border-slate-200 dark:border-white/10">
                   {proj.highlights.map((h, hIdx) => (
-                    <div key={hIdx} className="flex items-start gap-2 text-xs text-slate-600 dark:text-white/60 font-light">
+                    <div
+                      key={hIdx}
+                      className="flex items-start gap-2 text-xs text-slate-600 dark:text-white/60 font-light"
+                    >
                       <Sparkles className="w-3.5 h-3.5 text-slate-700 dark:text-white/70 shrink-0 mt-0.5" />
                       <span>{h}</span>
                     </div>

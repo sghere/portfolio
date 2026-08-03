@@ -1,7 +1,7 @@
-import { resumeData } from './resumeData';
+import { resumeData } from "./resumeData";
 
 export function downloadResumePDF() {
-  const printWindow = window.open('', '_blank');
+  const printWindow = window.open("", "_blank");
   if (!printWindow) return;
 
   const htmlContent = `
@@ -130,11 +130,33 @@ export function downloadResumePDF() {
 
       <div class="section-title">Key Impact & Metrics</div>
       <ul class="bullets">
-        ${resumeData.achievements.map(a => `<li><strong>${a.metric}:</strong> ${a.value}</li>`).join('')}
+        ${resumeData.achievements.map((a) => `<li><strong>${a.metric}:</strong> ${a.value}</li>`).join("")}
       </ul>
 
+      <div class="section-title">Technical Skills</div>
+
+      ${Object.entries(resumeData.skills)
+        .map(
+          ([category, skills]) => `
+            <div style="margin-bottom:10px;font-size:13px;">
+              <strong style="color:#111827;" >
+                ${category.charAt(0).toUpperCase() + category.slice(1)}:
+              </strong>
+              
+            
+             <div>
+              ${skills.map((t) => `<span class="tech-tag">${t}</span>`).join("")}
+              </div>
+
+            </div>
+          `,
+        )
+        .join("")}
+
       <div class="section-title">Work Experience</div>
-      ${resumeData.experience.map(job => `
+      ${resumeData.experience
+        .map(
+          (job) => `
         <div class="job">
           <div class="job-header">
             <span>${job.designation} — ${job.company}</span>
@@ -142,16 +164,20 @@ export function downloadResumePDF() {
           </div>
           <div class="job-sub">${job.location} | ${job.employmentType}</div>
           <ul class="bullets">
-            ${job.responsibilities.map(r => `<li>${r}</li>`).join('')}
+            ${job.responsibilities.map((r) => `<li>${r}</li>`).join("")}
           </ul>
           <div>
-            ${job.technologies.map(t => `<span class="tech-tag">${t}</span>`).join('')}
+            ${job.technologies.map((t) => `<span class="tech-tag">${t}</span>`).join("")}
           </div>
         </div>
-      `).join('')}
+      `,
+        )
+        .join("")}
 
       <div class="section-title">Key Projects</div>
-      ${resumeData.projects.map(proj => `
+      ${resumeData.projects
+        .map(
+          (proj) => `
         <div class="job">
           <div class="job-header">
             <span>${proj.name}</span>
@@ -159,22 +185,32 @@ export function downloadResumePDF() {
           </div>
           <div class="job-sub">${proj.description}</div>
           <ul class="bullets">
-            ${proj.highlights.map(h => `<li>${h}</li>`).join('')}
+            ${proj.highlights.map((h) => `<li>${h}</li>`).join("")}
           </ul>
         </div>
-      `).join('')}
+      `,
+        )
+        .join("")}
 
       <div class="section-title">Education & Publications</div>
-      ${resumeData.education.map(edu => `
+      ${resumeData.education
+        .map(
+          (edu) => `
         <div style="margin-bottom: 8px; font-size: 13px;">
           <strong>${edu.degree}</strong> — ${edu.institution} (${edu.startDate} - ${edu.endDate})
         </div>
-      `).join('')}
-      ${resumeData.publications.map(pub => `
+      `,
+        )
+        .join("")}
+      ${resumeData.publications
+        .map(
+          (pub) => `
         <div style="margin-top: 8px; font-size: 13px;">
           <strong>IEEE Publication:</strong> ${pub.title} (${pub.publisher}, ${pub.publishedDate})
         </div>
-      `).join('')}
+      `,
+        )
+        .join("")}
 
       <script>
         window.onload = function() {

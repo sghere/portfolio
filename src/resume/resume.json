@@ -29,7 +29,8 @@
       "RTK Query",
       "Context API",
       "Zustand",
-      "React Query",
+      "TanStack Query (React Query)",
+      "TanStack Router",
       "React Hook Form",
       "HTML5",
       "CSS3",
@@ -53,7 +54,9 @@
       "Lazy Loading",
       "Accessibility (WCAG)",
       "Microfrontends",
-      "Module Federation"
+      "Module Federation",
+      "Responsive Design",
+      "Progressive Web Apps (PWA)"
     ],
     "backend": [
       "Node.js",
@@ -61,14 +64,25 @@
       "REST APIs",
       "GraphQL",
       "API Integration",
+      "API Design",
       "Data Fetching",
       "API Caching",
-      "Authentication"
+      "Authentication",
+      "JWT",
+      "Supabase",
+      "Supabase Edge Functions",
+      "PostgreSQL",
+      "Row Level Security (RLS)",
+      "Stripe Integration",
+      "AI API Integration",
+      "Prompt Engineering",
+      "Gemini AI"
     ],
     "testing": ["Jest", "React Testing Library", "Cypress", "Storybook"],
     "tools": [
       "Git",
       "GitHub",
+      "npm",
       "Vite",
       "Webpack",
       "Babel",
@@ -87,7 +101,9 @@
       "Design Patterns",
       "SQL",
       "Agile",
-      "HTTP/HTTPS"
+      "HTTP/HTTPS",
+      "ATS Optimization",
+      "SEO Basics"
     ]
   },
   "experience": [
@@ -177,7 +193,8 @@
         "Gemini AI",
         "Stripe",
         "Vercel"
-      ]
+      ],
+      "link": "https://resumereveal-by-sg.vercel.app/"
     },
     {
       "name": "Unified App (Microfrontend Architecture)",
@@ -197,7 +214,8 @@
         "Module Federation",
         "Chrome DevTools",
         "Lighthouse"
-      ]
+      ],
+      "link": "https://app.smarte.pro/"
     },
     {
       "name": "SMARTe Chrome Extension",
@@ -214,7 +232,8 @@
         "Chrome Extension APIs",
         "REST APIs",
         "TypeScript"
-      ]
+      ],
+      "link": "https://www.smarte.pro/extension"
     },
     {
       "name": "@sghere/is-active",
@@ -222,6 +241,19 @@
       "description": "Published an open-source React component on npm for active state detection.",
       "highlights": ["Built with TypeScript.", "Published on npm."],
       "technologies": ["React", "TypeScript", "npm"]
+    },
+    {
+      "name": "Personal Portfolio",
+      "type": "Portfolio Website",
+      "description": "Designed and developed a responsive portfolio website showcasing projects, technical skills, experience, and contact information.",
+      "highlights": [
+        "Built with React, TypeScript, and Tailwind CSS for a fast, responsive user experience.",
+        "Showcases featured projects with live demos, GitHub links, and detailed descriptions.",
+        "Optimized for performance, accessibility, and SEO.",
+        "Deployed on Vercel with a custom domain and continuous deployment."
+      ],
+      "technologies": ["React", "TypeScript", "Tailwind CSS", "Vite", "Vercel"],
+      "link": "https://sghere.vercel.app/"
     }
   ],
   "education": [
