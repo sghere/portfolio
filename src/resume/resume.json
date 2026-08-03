@@ -65,12 +65,7 @@
       "API Caching",
       "Authentication"
     ],
-    "testing": [
-      "Jest",
-      "React Testing Library",
-      "Cypress",
-      "Storybook"
-    ],
+    "testing": ["Jest", "React Testing Library", "Cypress", "Storybook"],
     "tools": [
       "Git",
       "GitHub",
@@ -163,6 +158,28 @@
   ],
   "projects": [
     {
+      "name": "ResumeReveal",
+      "type": "Full Stack AI Web Application",
+      "description": "Built an AI-powered Resume Analysis and ATS Optimization platform with secure serverless APIs and a credit-based billing system.",
+      "highlights": [
+        "Developed secure APIs using Supabase Edge Functions, Authentication, PostgreSQL, and Row Level Security (RLS).",
+        "Integrated Gemini AI to generate ATS scores, resume improvement suggestions, and keyword gap analysis.",
+        "Implemented a credit-based billing system with manual payment verification, automated credit allocation, and real-time credit tracking.",
+        "Built a responsive React application with TypeScript and Tailwind CSS, deployed on Vercel."
+      ],
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Supabase",
+        "Supabase Edge Functions",
+        "PostgreSQL",
+        "Gemini AI",
+        "Stripe",
+        "Vercel"
+      ]
+    },
+    {
       "name": "Unified App (Microfrontend Architecture)",
       "type": "Enterprise Application",
       "description": "Designed a microfrontend platform using Webpack Module Federation for independent deployments.",
@@ -203,15 +220,8 @@
       "name": "@sghere/is-active",
       "type": "Open Source",
       "description": "Published an open-source React component on npm for active state detection.",
-      "highlights": [
-        "Built with TypeScript.",
-        "Published on npm."
-      ],
-      "technologies": [
-        "React",
-        "TypeScript",
-        "npm"
-      ]
+      "highlights": ["Built with TypeScript.", "Published on npm."],
+      "technologies": ["React", "TypeScript", "npm"]
     }
   ],
   "education": [
